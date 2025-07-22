@@ -1,4 +1,4 @@
-package main
+package basics
 
 import (
 	"encoding/base64"
@@ -7,13 +7,10 @@ import (
 	"fmt"
 )
 
-func main() {
-	base64Example()
-	jsonExample()
-	hexExample()
-}
+// Basic Data Encoding and Decoding
+// Learn basic techniques for encoding and decoding data in Go using built-in and standard libraries.
 
-func base64Example() {
+func Base64Example() {
 	// Base64 Encoding
 	data := "Hello, World!"
 	encoded := base64.StdEncoding.EncodeToString([]byte(data))
@@ -34,7 +31,7 @@ func base64Example() {
 // Decoded: Hello, World!
 
 // JSON Encoding and Decoding
-func jsonExample() {
+func JSONExample() {
 	// Import "encoding/json" package
 	// Define a struct for JSON encoding
 	type Person struct {
@@ -69,7 +66,7 @@ func jsonExample() {
 
 // Hex Encoding and Decoding
 
-func hexExample() {
+func HexExample() {
 	// Import "encoding/hex" package
 	// Hex Encoding
 	data := "Hello, World!"
